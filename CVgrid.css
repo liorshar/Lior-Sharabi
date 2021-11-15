@@ -1,0 +1,48 @@
+bodt{
+    background-color:rgb(255, 255, 255);
+}
+
+#GridContainer {
+    display: grid;
+    grid-template-areas:
+     'header header header'
+     'left main main'
+     'left main main'
+}
+
+#item1{
+    grid-area: header;
+    width: 100%;
+    background-color: rgb(160, 240, 160);
+    height: 33vh;   
+}
+
+#item2{
+    grid-area: left;
+    width: 100%;
+    background-color: rgb(59, 161, 68);
+    height: 66vh;
+}
+
+
+#item3{
+    grid-area: main;
+    width: 100%;
+    background-color: rgb(28, 70, 20);
+    height: 66vh;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color:rgb(62, 218, 218) ;
+    }
+    #GridContainer { 
+     display: grid;
+     grid-template-areas: 
+      'header'
+      'left'
+      'main'
+ }
+ 
+ }
+
