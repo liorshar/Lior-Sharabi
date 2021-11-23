@@ -14,7 +14,13 @@ bodt{
     grid-area: header;
     width: 100%;
     background-color: rgb(160, 240, 160);
-    height: 33vh;   
+    height: 33vh;
+    animation-name: ChangeBackground1;
+    animation-delay: 1s;
+    animation-duration: 3s; 
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
+  
 }
 
 #item2{
@@ -22,6 +28,11 @@ bodt{
     width: 100%;
     background-color: rgb(59, 161, 68);
     height: 66vh;
+    animation-name: ChangeBackground2;
+    animation-delay: 1s;
+    animation-duration: 3s; 
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
 }
 
 
@@ -30,6 +41,11 @@ bodt{
     width: 100%;
     background-color: rgb(28, 70, 20);
     height: 66vh;
+    animation-name: ChangeBackground3;
+    animation-delay: 1s;
+    animation-duration: 3s; 
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
 }
 
 @media only screen and (max-width: 600px) {
@@ -46,3 +62,21 @@ bodt{
  
  }
 
+@keyframes ChangeBackground1 {
+    25% {background-color: rgb(143, 114, 212);}
+    50% {background-color:white;}
+    75% {background-color:rgb(221, 55, 55);}
+    100% {background-color:white;} 
+}
+@keyframes ChangeBackground2 {
+    25% {background-color: rgb(233, 230, 53);}
+    50% {background-color:white;}
+    75% {background-color:rgb(55, 127, 221);}
+    100% {background-color:white;} 
+}
+@keyframes ChangeBackground3 {
+    25% {background-color: rgb(240, 48, 121);}
+    50% {background-color:white;}
+    75% {background-color:rgb(224, 154, 61);}
+    100% {background-color:white;} 
+}
